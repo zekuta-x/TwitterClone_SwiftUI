@@ -12,17 +12,17 @@ struct ContentView: View {
         NavigationView{
             
             TabView{
-                Text("Feed")
+                FeedView()
                     .tabItem{
                         Image(systemName: "house")
                         Text("Home")
                     }
-                Text("Search View")
+                SearchView()
                     .tabItem{
                         Image(systemName: "magnifyingglass")
                         Text("Search")
                     }
-                Text("Message")
+                ConversationsView()
                     .tabItem{
                         Image(systemName: "envelope")
                         Text("Meseages")
