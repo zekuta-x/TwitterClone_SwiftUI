@@ -11,11 +11,15 @@ struct FeedView: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing){
             ScrollView{
-                
+                VStack{
+                    ForEach(0..<10) { _ in
+                        TweetCell()
+                    }
+                }.padding()
             }
             
             Button(action: {}, label: {
-                Image(systemName: "plus.fill")
+                Image(systemName: "message")
                     .resizable()
                     .frame(width: 32, height: 32)
                     .padding()
