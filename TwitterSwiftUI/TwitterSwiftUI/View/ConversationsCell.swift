@@ -23,10 +23,10 @@ struct ConversationsCell: View {
                         .font(.system(size: 14, weight: .semibold))
                     
                     Text("Eddie Brockasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
-                        .font(.system(size: 14))
+                        .font(.system(size: 15))
                         .lineLimit(2)
                 }
-                .frame(height: 64)
+                .foregroundColor(.black)
                 .padding(.trailing)
             }
         }
