@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB19791627B35268006D822D /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB19791527B35268006D822D /* UserProfileView.swift */; };
+		AB19791827B35446006D822D /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB19791727B35446006D822D /* ProfileHeaderView.swift */; };
+		AB19791A27B3545B006D822D /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB19791927B3545B006D822D /* ProfileActionButtonView.swift */; };
+		AB19791C27B35477006D822D /* FilterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB19791B27B35477006D822D /* FilterButtonView.swift */; };
 		AB418CDC27B1E31E003C3D06 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB418CDB27B1E31E003C3D06 /* ChatBubble.swift */; };
 		AB418CDE27B1EA71003C3D06 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB418CDD27B1EA71003C3D06 /* Message.swift */; };
 		AB418CE027B1F433003C3D06 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB418CDF27B1F433003C3D06 /* MessageView.swift */; };
@@ -27,6 +31,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB19791527B35268006D822D /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		AB19791727B35446006D822D /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		AB19791927B3545B006D822D /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
+		AB19791B27B35477006D822D /* FilterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtonView.swift; sourceTree = "<group>"; };
 		AB418CDB27B1E31E003C3D06 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		AB418CDD27B1EA71003C3D06 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		AB418CDF27B1F433003C3D06 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
@@ -58,6 +66,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB19791427B35238006D822D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AB19791527B35268006D822D /* UserProfileView.swift */,
+				AB19791727B35446006D822D /* ProfileHeaderView.swift */,
+				AB19791927B3545B006D822D /* ProfileActionButtonView.swift */,
+				AB19791B27B35477006D822D /* FilterButtonView.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
 		AB4BE21927A9339D002C5A9F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +88,7 @@
 		AB4BE21A27A933A8002C5A9F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AB19791427B35238006D822D /* Profile */,
 				ABAD8CF627ABBA8600247D8D /* Messages */,
 				AB7FEB8A27A413110071950B /* ContentView.swift */,
 				AB4BE21727A8C3A1002C5A9F /* FeedView.swift */,
@@ -212,14 +232,18 @@
 				AB81705E27B1D44F00E489A6 /* MessageInputView.swift in Sources */,
 				AB418CE227B207B6003C3D06 /* NewMassageView.swift in Sources */,
 				AB7FEB8B27A413110071950B /* ContentView.swift in Sources */,
+				AB19791827B35446006D822D /* ProfileHeaderView.swift in Sources */,
 				ABAD8CEF27AB6D1600247D8D /* TweetCell.swift in Sources */,
 				AB81706027B1D64300E489A6 /* ChatView.swift in Sources */,
+				AB19791C27B35477006D822D /* FilterButtonView.swift in Sources */,
 				ABAD8CF827ABBAB700247D8D /* ConversationsView.swift in Sources */,
 				AB4BE21827A8C3A1002C5A9F /* FeedView.swift in Sources */,
 				AB418CDC27B1E31E003C3D06 /* ChatBubble.swift in Sources */,
 				ABAD8CFA27ABBACB00247D8D /* ConversationsCell.swift in Sources */,
 				AB418CDE27B1EA71003C3D06 /* Message.swift in Sources */,
+				AB19791627B35268006D822D /* UserProfileView.swift in Sources */,
 				AB7FEB8927A413110071950B /* TwitterSwiftUIApp.swift in Sources */,
+				AB19791A27B3545B006D822D /* ProfileActionButtonView.swift in Sources */,
 				ABAD8CF327ABA06A00247D8D /* SearchBar.swift in Sources */,
 				AB418CE027B1F433003C3D06 /* MessageView.swift in Sources */,
 				ABAD8CF527ABB32200247D8D /* UserCell.swift in Sources */,
