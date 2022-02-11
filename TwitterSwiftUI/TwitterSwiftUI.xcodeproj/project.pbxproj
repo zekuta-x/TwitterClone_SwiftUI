@@ -28,6 +28,11 @@
 		ABAD8CF527ABB32200247D8D /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAD8CF427ABB32200247D8D /* UserCell.swift */; };
 		ABAD8CF827ABBAB700247D8D /* ConversationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAD8CF727ABBAB700247D8D /* ConversationsView.swift */; };
 		ABAD8CFA27ABBACB00247D8D /* ConversationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAD8CF927ABBACB00247D8D /* ConversationsCell.swift */; };
+		ABBBC76C27B53A660019E80E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBBC76B27B53A660019E80E /* LoginView.swift */; };
+		ABBBC76E27B53A840019E80E /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBBC76D27B53A840019E80E /* Registration.swift */; };
+		ABBBC77027B53E210019E80E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBBC76F27B53E210019E80E /* CustomTextField.swift */; };
+		ABCDEBEC27B4D1CF00DF5D3D /* NewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDEBEB27B4D1CF00DF5D3D /* NewTweetView.swift */; };
+		ABCDEBF027B4D7BB00DF5D3D /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDEBEF27B4D7BB00DF5D3D /* TextArea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +58,11 @@
 		ABAD8CF427ABB32200247D8D /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		ABAD8CF727ABBAB700247D8D /* ConversationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsView.swift; sourceTree = "<group>"; };
 		ABAD8CF927ABBACB00247D8D /* ConversationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsCell.swift; sourceTree = "<group>"; };
+		ABBBC76B27B53A660019E80E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		ABBBC76D27B53A840019E80E /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		ABBBC76F27B53E210019E80E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		ABCDEBEB27B4D1CF00DF5D3D /* NewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetView.swift; sourceTree = "<group>"; };
+		ABCDEBEF27B4D7BB00DF5D3D /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +98,7 @@
 		AB4BE21A27A933A8002C5A9F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ABBBC76A27B53A3A0019E80E /* Authentication */,
 				AB19791427B35238006D822D /* Profile */,
 				ABAD8CF627ABBA8600247D8D /* Messages */,
 				AB7FEB8A27A413110071950B /* ContentView.swift */,
@@ -103,6 +114,7 @@
 		AB4BE21B27A933B7002C5A9F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				ABCDEBEA27B4D1AB00DF5D3D /* Tweets */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -126,6 +138,7 @@
 		AB7FEB8727A413110071950B /* TwitterSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				ABCDEBED27B4D79B00DF5D3D /* Utils */,
 				AB4BE21927A9339D002C5A9F /* Model */,
 				AB4BE21B27A933B7002C5A9F /* ViewModels */,
 				AB4BE21A27A933A8002C5A9F /* View */,
@@ -156,6 +169,40 @@
 				AB418CE127B207B6003C3D06 /* NewMassageView.swift */,
 			);
 			name = Messages;
+			sourceTree = "<group>";
+		};
+		ABBBC76A27B53A3A0019E80E /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				ABBBC76B27B53A660019E80E /* LoginView.swift */,
+				ABBBC76D27B53A840019E80E /* Registration.swift */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		ABCDEBEA27B4D1AB00DF5D3D /* Tweets */ = {
+			isa = PBXGroup;
+			children = (
+				ABCDEBEB27B4D1CF00DF5D3D /* NewTweetView.swift */,
+			);
+			path = Tweets;
+			sourceTree = "<group>";
+		};
+		ABCDEBED27B4D79B00DF5D3D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ABCDEBEE27B4D7A400DF5D3D /* Views */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		ABCDEBEE27B4D7A400DF5D3D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ABCDEBEF27B4D7BB00DF5D3D /* TextArea.swift */,
+				ABBBC76F27B53E210019E80E /* CustomTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,12 +276,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABAD8CF127AB9FD700247D8D /* SearchView.swift in Sources */,
+				ABCDEBF027B4D7BB00DF5D3D /* TextArea.swift in Sources */,
 				AB81705E27B1D44F00E489A6 /* MessageInputView.swift in Sources */,
 				AB418CE227B207B6003C3D06 /* NewMassageView.swift in Sources */,
 				AB7FEB8B27A413110071950B /* ContentView.swift in Sources */,
 				AB19791827B35446006D822D /* ProfileHeaderView.swift in Sources */,
 				ABAD8CEF27AB6D1600247D8D /* TweetCell.swift in Sources */,
+				ABBBC76E27B53A840019E80E /* Registration.swift in Sources */,
 				AB81706027B1D64300E489A6 /* ChatView.swift in Sources */,
+				ABBBC76C27B53A660019E80E /* LoginView.swift in Sources */,
+				ABCDEBEC27B4D1CF00DF5D3D /* NewTweetView.swift in Sources */,
 				AB19791C27B35477006D822D /* FilterButtonView.swift in Sources */,
 				ABAD8CF827ABBAB700247D8D /* ConversationsView.swift in Sources */,
 				AB4BE21827A8C3A1002C5A9F /* FeedView.swift in Sources */,
@@ -244,6 +295,7 @@
 				AB19791627B35268006D822D /* UserProfileView.swift in Sources */,
 				AB7FEB8927A413110071950B /* TwitterSwiftUIApp.swift in Sources */,
 				AB19791A27B3545B006D822D /* ProfileActionButtonView.swift in Sources */,
+				ABBBC77027B53E210019E80E /* CustomTextField.swift in Sources */,
 				ABAD8CF327ABA06A00247D8D /* SearchBar.swift in Sources */,
 				AB418CE027B1F433003C3D06 /* MessageView.swift in Sources */,
 				ABAD8CF527ABB32200247D8D /* UserCell.swift in Sources */,
