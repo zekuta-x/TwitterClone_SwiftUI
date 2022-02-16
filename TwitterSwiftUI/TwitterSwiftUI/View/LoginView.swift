@@ -20,24 +20,58 @@ struct LoginView: View {
                     .scaledToFill()
                     .frame(width: 220, height: 100)
                     .padding(.top, 88)
+                    .padding(.bottom, 32)
                 
-                VStack{
-                    CustomTextField(text: $email, placeholder: Text("Email"))
+                VStack(spacing: 20){
+                    CustomTextField(text: $email, placeholder: Text("Email"), imageName: "envelope")
                         .padding()
                         .background(Color(.init(white: 1, alpha: 0.15)))
                         .cornerRadius(10)
-                        .padding()
                         .foregroundColor(.white)
                     
-                    CustomTextField(text: $password, placeholder: Text("Password"))
+                    CustomSecureField(text: $password, placeholder: Text("Password"))
                         .padding()
                         .background(Color(.init(white: 1, alpha: 0.15)))
                         .cornerRadius(10)
-                        .padding()
                         .foregroundColor(.white)
                 }
+                .padding(.horizontal, 32)
+                
+                HStack{
+                    Spacer()
+                    Button(action: {}, label: {
+                        Text("forgot password?")
+                            .foregroundColor(.white)
+                            .font(.footnote)
+                            .bold()
+                            .padding(.top, 10)
+                            .padding(.trailing, 30)
+                    })
+                }
+                
+                Button(action: {}, label: {
+                    Text("Sign in")
+                        .bold()
+                        .frame(width: 360, height: 45)
+                        .background(Color.white)
+                        .clipShape(Capsule())
+                })
+                .padding()
                 
                 Spacer()
+                
+                HStack{
+                    Text("Don't have an account?")
+                        .foregroundColor(.white)
+                    
+                    Button(action: {}, label: {
+                        Text("Sign up")
+                            .bold()
+                            .foregroundColor(.white)
+                    })
+                }
+                .padding(.bottom, 40)
+                
             }
         }
         .background(Color(#colorLiteral(red: 0.1076875106, green: 0.6322041154, blue: 0.9512472749, alpha: 1)))
