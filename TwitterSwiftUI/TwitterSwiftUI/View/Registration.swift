@@ -23,6 +23,7 @@ struct Registration: View {
         image = Image(uiImage: selectedUIImage)
     }
     
+    // body
     var body: some View {
         ZStack {
             VStack{
