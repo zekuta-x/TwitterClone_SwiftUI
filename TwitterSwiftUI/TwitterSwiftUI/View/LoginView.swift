@@ -11,6 +11,7 @@ struct LoginView: View {
     
     @State var email = ""
     @State var password = ""
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         NavigationView {
@@ -20,7 +21,7 @@ struct LoginView: View {
                         .resizable()
                         .scaledToFill()
                         .frame(width: 220, height: 100)
-                        .padding(.top, 88)
+                        .padding(.top, 95)
                         .padding(.bottom, 32)
                     
                     VStack(spacing: 20){
@@ -50,7 +51,9 @@ struct LoginView: View {
                         })
                     }
                     
-                    Button(action: {}, label: {
+                    Button(action: {
+                        viewModel.login(withEmail: email, password: password)
+                    }, label: {
                         Text("Sign in")
                             .bold()
                             .frame(width: 360, height: 45)
@@ -72,7 +75,7 @@ struct LoginView: View {
                                     .bold()
                                     .foregroundColor(.white)
                             }
-                            .padding(.bottom, 40)
+                            .padding(.bottom, 45)
                     })
                     
                 }
