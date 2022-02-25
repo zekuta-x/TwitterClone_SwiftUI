@@ -23,6 +23,7 @@
 		AB69D27727C661A900C9BF9C /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = AB69D27627C661A900C9BF9C /* FirebaseFunctions */; };
 		AB69D27927C661A900C9BF9C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AB69D27827C661A900C9BF9C /* FirebaseStorage */; };
 		AB6E8DB427BF133300B2B184 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6E8DB327BF133300B2B184 /* ImagePicker.swift */; };
+		AB7B4B0827C87BD100E4761B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B4B0727C87BD100E4761B /* User.swift */; };
 		AB7FEB8927A413110071950B /* TwitterSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7FEB8827A413110071950B /* TwitterSwiftUIApp.swift */; };
 		AB7FEB8B27A413110071950B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7FEB8A27A413110071950B /* ContentView.swift */; };
 		AB7FEB8D27A413130071950B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB7FEB8C27A413130071950B /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		AB4BE21727A8C3A1002C5A9F /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		AB69D26F27C65FD800C9BF9C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AB6E8DB327BF133300B2B184 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		AB7B4B0727C87BD100E4761B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AB7FEB8527A413110071950B /* TwitterSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB7FEB8827A413110071950B /* TwitterSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterSwiftUIApp.swift; sourceTree = "<group>"; };
 		AB7FEB8A27A413110071950B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				AB418CDD27B1EA71003C3D06 /* Message.swift */,
+				AB7B4B0727C87BD100E4761B /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				AB3BD28127C7079F00D906BA /* AuthViewModel.swift in Sources */,
 				AB418CDE27B1EA71003C3D06 /* Message.swift in Sources */,
 				AB19791627B35268006D822D /* UserProfileView.swift in Sources */,
+				AB7B4B0827C87BD100E4761B /* User.swift in Sources */,
 				AB7FEB8927A413110071950B /* TwitterSwiftUIApp.swift in Sources */,
 				AB19791A27B3545B006D822D /* ProfileActionButtonView.swift in Sources */,
 				ABBBC77027B53E210019E80E /* CustomTextField.swift in Sources */,
@@ -389,7 +393,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -444,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
