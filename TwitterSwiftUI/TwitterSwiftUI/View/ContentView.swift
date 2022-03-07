@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var viewModel: AuthViewModel
     
-    //Homebar()
+    //Homebar
     var body: some View {
         Group{
             if viewModel.userSession != nil {
