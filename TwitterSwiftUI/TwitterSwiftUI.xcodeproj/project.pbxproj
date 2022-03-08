@@ -30,6 +30,9 @@
 		AB7FEB9027A413130071950B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB7FEB8F27A413130071950B /* Preview Assets.xcassets */; };
 		AB81705E27B1D44F00E489A6 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81705D27B1D44F00E489A6 /* MessageInputView.swift */; };
 		AB81706027B1D64300E489A6 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81705F27B1D64300E489A6 /* ChatView.swift */; };
+		AB82159E27D6E24C00B0E571 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AB82159D27D6E24C00B0E571 /* Kingfisher */; };
+		AB8215A027D6E3B800B0E571 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB82159F27D6E3B800B0E571 /* SearchViewModel.swift */; };
+		AB8215A227D6E49800B0E571 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8215A127D6E49800B0E571 /* Constants.swift */; };
 		AB83CA5027BCDD8E000E1D6A /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB83CA4F27BCDD8E000E1D6A /* CustomSecureField.swift */; };
 		ABAD8CEF27AB6D1600247D8D /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAD8CEE27AB6D1600247D8D /* TweetCell.swift */; };
 		ABAD8CF127AB9FD700247D8D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAD8CF027AB9FD700247D8D /* SearchView.swift */; };
@@ -65,6 +68,8 @@
 		AB7FEB8F27A413130071950B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB81705D27B1D44F00E489A6 /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
 		AB81705F27B1D64300E489A6 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		AB82159F27D6E3B800B0E571 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		AB8215A127D6E49800B0E571 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AB83CA4F27BCDD8E000E1D6A /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		ABAD8CEE27AB6D1600247D8D /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		ABAD8CF027AB9FD700247D8D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -88,6 +93,7 @@
 				AB69D27927C661A900C9BF9C /* FirebaseStorage in Frameworks */,
 				AB69D27327C661A800C9BF9C /* FirebaseAuth in Frameworks */,
 				AB69D27527C661A800C9BF9C /* FirebaseFirestore in Frameworks */,
+				AB82159E27D6E24C00B0E571 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				AB3BD28027C7079E00D906BA /* AuthViewModel.swift */,
+				AB82159F27D6E3B800B0E571 /* SearchViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -213,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				ABCDEBEE27B4D7A400DF5D3D /* Views */,
+				AB8215A127D6E49800B0E571 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -249,6 +257,7 @@
 				AB69D27427C661A800C9BF9C /* FirebaseFirestore */,
 				AB69D27627C661A900C9BF9C /* FirebaseFunctions */,
 				AB69D27827C661A900C9BF9C /* FirebaseStorage */,
+				AB82159D27D6E24C00B0E571 /* Kingfisher */,
 			);
 			productName = TwitterSwiftUI;
 			productReference = AB7FEB8527A413110071950B /* TwitterSwiftUI.app */;
@@ -280,6 +289,7 @@
 			mainGroup = AB7FEB7C27A413110071950B;
 			packageReferences = (
 				AB69D27127C661A800C9BF9C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AB82159C27D6E24B00B0E571 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = AB7FEB8627A413110071950B /* Products */;
 			projectDirPath = "";
@@ -313,6 +323,7 @@
 				AB81705E27B1D44F00E489A6 /* MessageInputView.swift in Sources */,
 				AB418CE227B207B6003C3D06 /* NewMassageView.swift in Sources */,
 				AB7FEB8B27A413110071950B /* ContentView.swift in Sources */,
+				AB8215A227D6E49800B0E571 /* Constants.swift in Sources */,
 				AB19791827B35446006D822D /* ProfileHeaderView.swift in Sources */,
 				ABAD8CEF27AB6D1600247D8D /* TweetCell.swift in Sources */,
 				ABBBC76E27B53A840019E80E /* Registration.swift in Sources */,
@@ -326,6 +337,7 @@
 				AB418CDC27B1E31E003C3D06 /* ChatBubble.swift in Sources */,
 				ABAD8CFA27ABBACB00247D8D /* ConversationsCell.swift in Sources */,
 				AB3BD28127C7079F00D906BA /* AuthViewModel.swift in Sources */,
+				AB8215A027D6E3B800B0E571 /* SearchViewModel.swift in Sources */,
 				AB418CDE27B1EA71003C3D06 /* Message.swift in Sources */,
 				AB19791627B35268006D822D /* UserProfileView.swift in Sources */,
 				AB7B4B0827C87BD100E4761B /* User.swift in Sources */,
@@ -548,6 +560,14 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		AB82159C27D6E24B00B0E571 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -570,6 +590,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AB69D27127C661A800C9BF9C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		AB82159D27D6E24C00B0E571 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB82159C27D6E24B00B0E571 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
