@@ -18,7 +18,7 @@ struct User: Identifiable{
         self.id = dictionary["uid"] as? String ?? ""
         self.username = dictionary["username"] as? String ?? ""
         self.ProfileImageurl = dictionary["profileImageUrl"] as? String ?? ""
-        self.fullname = dictionary["email"] as? String ?? ""
-        self.email = dictionary["fullname"] as? String ?? ""
+        self.fullname = dictionary["fullname"] as? String ?? ""
+        self.email = dictionary["email"] as? String ?? ""
     }
 }
