@@ -3,7 +3,6 @@
 //  TwitterSwiftUI
 //
 //  Created by 鳥山英峻 on 2022/02/09.
-//
 
 import SwiftUI
 
